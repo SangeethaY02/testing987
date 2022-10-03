@@ -1,0 +1,15 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+	
+    <aura:attribute name="variable1" type="double" default="1"/>
+    <aura:attribute name="variable2" type="double" default="1"/>
+    <aura:attribute name="result" type="double"/>
+   
+   
+    
+    <ui:inputNumber label="Enter number1:" value="{!v.variable1}"/>
+    <ui:inputNumber label="Enter number2:" value="{!v.variable2}"/>
+    
+    <button label="Click" onclick="{!c.Add}"/>
+    Result is :
+    <ui:outputNumber value="{!v.result}"/> 
+</aura:component>
